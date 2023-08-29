@@ -10,13 +10,15 @@ repositories {
 	mavenCentral()
 }
 
-dependencies {
-	testImplementation 'org.jetbrains.kotlin:kotlin-test'
-	implementation 'com.sun.mail:javax.mail:1.6.2'
+configurations {
+	embed
+	compile.extendsFrom(embed)
 }
 
-test {
-	useJUnitPlatform()
+dependencies {
+	embed 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
+	embed 'com.sun.mail:javax.mail:1.6.2'
+	implementation 'com.sun.mail:javax.mail:1.6.2'
 }
 
 kotlin {
@@ -25,4 +27,14 @@ kotlin {
 
 application {
 	mainClassName = 'hummel.MainKt'
+}
+
+jar {
+	manifest {
+		attributes 'Main-Class': 'hummel.MainKt'
+	}
+	from(configurations.embed.collect {
+		if (it.isDirectory()) it else zipTree(it)
+	})
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
