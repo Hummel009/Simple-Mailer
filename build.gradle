@@ -1,10 +1,14 @@
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+
 plugins {
 	id 'org.jetbrains.kotlin.jvm' version '1.8.22'
 	id 'application'
 }
 
 group = 'org.example'
-version = '1.0-SNAPSHOT'
+final def currentDate = LocalDate.now()
+version = 'v' + currentDate.format(DateTimeFormatter.ofPattern('yy.MM.dd'))
 
 repositories {
 	mavenCentral()
@@ -17,8 +21,6 @@ configurations {
 
 dependencies {
 	embed 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
-	embed 'com.sun.mail:javax.mail:1.6.2'
-	implementation 'com.sun.mail:javax.mail:1.6.2'
 }
 
 kotlin {
