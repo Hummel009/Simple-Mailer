@@ -6,6 +6,6 @@
 
 Запустить jar-файл при помощи консоли, либо вызовом из другой программы.
 
-`java -jar Simple-Mailer-v23.08.29.jar your@mail.com yourMailToken`
+`java -jar Simple-Mailer.jar your@mail.com yourMailToken`
 
 Папка, где запускается jar-файл, должна содержать  три файла рядом: "recipients.txt" (на каждой строке одна почта), "subject.txt" (строка с заголовком) и "message.txt" (строка с текстом).
