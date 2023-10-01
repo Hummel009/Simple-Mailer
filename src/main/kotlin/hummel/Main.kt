@@ -2,7 +2,8 @@ package hummel
 
 import java.io.File
 import java.util.*
-import javax.mail.*
+import javax.mail.Message
+import javax.mail.Session
 import javax.mail.internet.InternetAddress
 import javax.mail.internet.MimeMessage
 
