@@ -25,12 +25,9 @@ fun main(args: Array<String>) {
 	message.setFrom(InternetAddress(login))
 	val file = File("recipients.txt")
 	val emails = mutableListOf<String>()
-	file.forEachLine { line ->
-		emails.add(line.trim())
-	}
-	for (item in emails) {
-		message.addRecipient(Message.RecipientType.TO, InternetAddress(item))
-	}
+	file.forEachLine { line -> emails.add(line.trim()) }
+	emails.forEach { message.addRecipient(Message.RecipientType.TO, InternetAddress(it)) }
+
 	val subject = File("subject.txt").readText()
 	message.subject = subject
 	val msg = File("message.txt").readText()
