@@ -2,7 +2,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
 plugins {
-	id("org.jetbrains.kotlin.jvm") version "1.9.21"
+	id("org.jetbrains.kotlin.jvm") version "1.9.22"
 	id("application")
 }
 
@@ -16,7 +16,7 @@ repositories {
 val embed: Configuration by configurations.creating
 
 dependencies {
-	embed("org.jetbrains.kotlin:kotlin-stdlib:1.9.21")
+	embed("org.jetbrains.kotlin:kotlin-stdlib:1.9.22")
 	embed("com.sun.mail:javax.mail:1.6.2")
 	implementation("com.sun.mail:javax.mail:1.6.2")
 }
