@@ -9,7 +9,8 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Hummel009_Simple-Mailer&metric=sqale_index)](https://sonarcloud.io/summary/overall?id=Hummel009_Simple-Mailer)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Hummel009_Simple-Mailer&metric=ncloc)](https://sonarcloud.io/summary/overall?id=Hummel009_Simple-Mailer)
 
-Программа для чтения адресов и сообщений из текстовых файлов и рассылки этих сообщений по адресам. Была разработана для афёры на лабораторной работе, когда PHP отказывался слать письмо.
+Программа для чтения адресов и сообщений из текстовых файлов и рассылки этих сообщений по адресам. Была разработана для
+афёры на лабораторной работе, когда PHP отказывался слать письмо.
 
 ## Общая информация
 
@@ -35,4 +36,5 @@
 * Положить в папке рядом с ним файл `subject.txt` (строка с заголовком);
 * Положить в папке рядом с ним файл `message.txt` (строка с текстом);
 * Зарегистрироваться на @mail.ru, загуглить `mail.ru smtp` и получить токен по инструкции.
-* Открыть консоль Windows в папке с вышеупомянутым файлом с расширением .jar и выполнить команду `java -jar JarFileName.jar your@mail.com yourMailToken`.
+* Открыть консоль Windows в папке с вышеупомянутым файлом с расширением .jar и выполнить
+  команду `java -jar JarFileName.jar your@mail.com yourMailToken`.
