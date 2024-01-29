@@ -9,10 +9,6 @@ plugins {
 group = "hummel"
 version = "v" + LocalDate.now().format(DateTimeFormatter.ofPattern("yy.MM.dd"))
 
-repositories {
-	mavenCentral()
-}
-
 val embed: Configuration by configurations.creating
 
 dependencies {
