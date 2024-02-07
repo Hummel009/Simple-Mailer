@@ -6,7 +6,7 @@ plugins {
 	id("application")
 }
 
-group = "hummel"
+group = "com.github.hummel"
 version = LocalDate.now().format(DateTimeFormatter.ofPattern("yy.MM.dd"))
 
 val embed: Configuration by configurations.creating

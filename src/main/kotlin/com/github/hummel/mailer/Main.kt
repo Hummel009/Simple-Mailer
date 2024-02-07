@@ -1,4 +1,4 @@
-package hummel
+package com.github.hummel.mailer
 
 import java.io.File
 import java.util.*
