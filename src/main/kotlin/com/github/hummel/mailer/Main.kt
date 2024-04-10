@@ -2,10 +2,10 @@ package com.github.hummel.mailer
 
 import java.io.File
 import java.util.*
-import javax.mail.Message
-import javax.mail.Session
-import javax.mail.internet.InternetAddress
-import javax.mail.internet.MimeMessage
+import jakarta.mail.Message
+import jakarta.mail.Session
+import jakarta.mail.internet.InternetAddress
+import jakarta.mail.internet.MimeMessage
 
 fun main(args: Array<String>) {
 	val login = args[0] //trorereborsky@mail.ru
