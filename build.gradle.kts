@@ -13,8 +13,8 @@ val embed: Configuration by configurations.creating
 
 dependencies {
 	embed("org.jetbrains.kotlin:kotlin-stdlib:1.9.23")
-	embed("com.sun.mail:javax.mail:1.6.2")
-	implementation("com.sun.mail:javax.mail:1.6.2")
+	embed("com.sun.mail:jakarta.mail:2.0.1")
+	implementation("com.sun.mail:jakarta.mail:2.0.1")
 }
 
 java {
